@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonas iRacing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #EC232C;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #cccccc;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .tab-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #ffffff;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .tab-button:hover {
+            background: rgba(236, 35, 44, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: #EC232C;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(236, 35, 44, 0.4);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .loading {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin: 40px 0;
+        }
+
+        .error {
+            text-align: center;
+            color: #ff4757;
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 71, 87, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 71, 87, 0.3);
+        }
+
+        .leaderboard {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .leaderboard h2 {
+            color: #EC232C;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .leaderboard-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .leaderboard-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .leaderboard-item.gold {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .leaderboard-item.silver {
+            background: linear-gradient(135deg, rgba(192, 192, 192, 0.2) 0%, rgba(192, 192, 192, 0.1) 100%);
+            border: 1px solid rgba(192, 192, 192, 0.3);
+        }
+
+        .leaderboard-item.bronze {
+            background: linear-gradient(135deg, rgba(205, 127, 50, 0.2) 0%, rgba(205, 127, 50, 0.1) 100%);
+            border: 1px solid rgba(205, 127, 50, 0.3);
+        }
+
+        .position {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #EC232C;
+            min-width: 40px;
+        }
+
+        .driver-name {
+            flex-grow: 1;
+            margin-left: 15px;
+            font-size: 1.1rem;
+        }
+
+        .irating {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #2D358E;
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chart-container h2 {
+            color: #EC232C;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .chart {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend-name {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .tabs {
+                gap: 5px;
+            }
+
+            .tab-button {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+                flex: 1;
+                max-width: 150px;
+            }
+
+            .leaderboard-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .position {
+                min-width: auto;
+            }
+
+            .chart {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-button {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                max-width: 120px;
+            }
+        }
+
+        .no-data {
+            text-align: center;
+            color: #888;
+            font-style: italic;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Lonas iRacing</h1>
+            <p>Team iRating Statistics</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('sports_car')">Sports Car</button>
+            <button class="tab-button" onclick="switchTab('formula_car')">Formula Car</button>
+        </div>
+
+        <div id="sports_car" class="tab-content active">
+            <div class="loading" id="sports_car_loading">Loading Sports Car data...</div>
+            <div class="error" id="sports_car_error" style="display: none;"></div>
+            <div id="sports_car_content" style="display: none;">
+                <div class="leaderboard">
+                    <h2>Sports Car Leaderboard</h2>
+                    <div id="sports_car_leaderboard"></div>
+                </div>
+                <div class="chart-container">
+                    <h2>12-Month iRating History</h2>
+                    <canvas id="sports_car_chart" class="chart"></canvas>
+                    <div id="sports_car_legend" class="legend"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="formula_car" class="tab-content">
+            <div class="loading" id="formula_car_loading">Loading Formula Car data...</div>
+            <div class="error" id="formula_car_error" style="display: none;"></div>
+            <div id="formula_car_content" style="display: none;">
+                <div class="leaderboard">
+                    <h2>Formula Car Leaderboard</h2>
+                    <div id="formula_car_leaderboard"></div>
+                </div>
+                <div class="chart-container">
+                    <h2>12-Month iRating History</h2>
+                    <canvas id="formula_car_chart" class="chart"></canvas>
+                    <div id="formula_car_legend" class="legend"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Team members data
+        const teamMembers = [
+            { name: 'Luis', id: 918399 },
+            { name: 'Samu', id: 1096007 },
+            { name: 'Porta', id: 900904 },
+            { name: 'Marcos', id: 1094362 },
+            { name: 'Rubén', id: 1001050 },
+            { name: 'Dalogax', id: 305408 }
+        ];
+
+        // Color palette for drivers
+        const driverColors = [
+            '#EC232C', '#2D358E', '#45b7d1', '#96ceb4', '#ffeaa7', '#fd79a8'
+        ];
+
+        let currentTab = 'sports_car';
+        let chartsData = {};
+
+        // Switch between tabs
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            currentTab = tabName;
+            
+            // Load data if not already loaded
+            if (!chartsData[tabName]) {
+                loadTabData(tabName);
+            }
+        }
+
+        // Load data for a specific tab
+        async function loadTabData(category) {
+            const promises = teamMembers.map(member => fetchMemberData(member, category));
+            
+            try {
+                const results = await Promise.allSettled(promises);
+                const validData = results
+                    .filter(result => result.status === 'fulfilled' && result.value)
+                    .map(result => result.value);
+                
+                if (validData.length === 0) {
+                    showError(category, 'No data available for any team members');
+                    return;
+                }
+
+                chartsData[category] = validData;
+                displayLeaderboard(category, validData);
+                displayChart(category, validData);
+                showContent(category);
+                
+            } catch (error) {
+                showError(category, 'Failed to load data: ' + error.message);
+            }
+        }
+
+        // Fetch data for a specific member and category
+        async function fetchMemberData(member, category) {
+            try {
+                const response = await fetch(`https://iracing6-backend.herokuapp.com/api/member-career-stats/career/${member.id}`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (!data[category] || !data[category].iRating) {
+                    console.log(`No data for ${member.name} in category ${category}`);
+                    return null;
+                }
+                
+                const chartData = data[category].iRating_chart?.data || [];
+                console.log(`Chart data for ${member.name} (${category}):`, chartData.length, 'points');
+                
+                return {
+                    name: member.name,
+                    id: member.id,
+                    currentRating: data[category].iRating.value,
+                    chartData: chartData
+                };
+                
+            } catch (error) {
+                console.error(`Error fetching data for ${member.name}:`, error);
+                return null;
+            }
+        }
+
+        // Display leaderboard for a category
+        function displayLeaderboard(category, data) {
+            const leaderboard = document.getElementById(`${category}_leaderboard`);
+            
+            // Sort by current iRating (descending)
+            const sortedData = data.sort((a, b) => b.currentRating - a.currentRating);
+            
+            leaderboard.innerHTML = sortedData
+                .map((driver, index) => {
+                    let medalClass = '';
+                    if (index === 0) medalClass = 'gold';
+                    else if (index === 1) medalClass = 'silver';
+                    else if (index === 2) medalClass = 'bronze';
+                    
+                    return `
+                        <div class="leaderboard-item ${medalClass}">
+                            <div class="position">#${index + 1}</div>
+                            <div class="driver-name">${driver.name}</div>
+                            <div class="irating">${driver.currentRating}</div>
+                        </div>
+                    `;
+                }).join('');
+        }
+
+        // Display chart for a category
+        function displayChart(category, data) {
+            const canvas = document.getElementById(`${category}_chart`);
+            const ctx = canvas.getContext('2d');
+            const legend = document.getElementById(`${category}_legend`);
+            
+            console.log(`Displaying chart for ${category} with data:`, data);
+            
+            // Set canvas size
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            
+            // Get last 12 months of data
+            const cutoffDate = new Date();
+            cutoffDate.setMonth(cutoffDate.getMonth() - 12);
+            
+            console.log(`Cutoff date for 12 months:`, cutoffDate);
+            
+            // Process data for each driver
+            const processedData = data.map((driver, index) => {
+                const filteredData = driver.chartData
+                    .filter(point => new Date(point.when) >= cutoffDate)
+                    .sort((a, b) => new Date(a.when) - new Date(b.when));
+                
+                console.log(`${driver.name} - Original data points: ${driver.chartData.length}, Filtered: ${filteredData.length}`);
+                
+                return {
+                    name: driver.name,
+                    data: filteredData,
+                    color: driverColors[index % driverColors.length]
+                };
+            }).filter(driver => driver.data.length > 0);
+
+            console.log(`Processed data for chart:`, processedData);
+
+            if (processedData.length === 0) {
+                ctx.fillStyle = '#888';
+                ctx.font = '16px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('No chart data available for the last 12 months', canvas.width / 2, canvas.height / 2);
+                return;
+            }
+
+            // Find min and max values for scaling
+            const allValues = processedData.flatMap(driver => driver.data.map(point => point.value));
+            const minValue = Math.min(...allValues);
+            const maxValue = Math.max(...allValues);
+            const valueRange = maxValue - minValue;
+            const padding = valueRange * 0.1;
+
+            // Find date range
+            const allDates = processedData.flatMap(driver => driver.data.map(point => new Date(point.when)));
+            const minDate = new Date(Math.min(...allDates));
+            const maxDate = new Date(Math.max(...allDates));
+            const dateRange = maxDate - minDate;
+
+            // Chart dimensions
+            const chartMargin = 40;
+            const chartWidth = canvas.width - 2 * chartMargin;
+            const chartHeight = canvas.height - 2 * chartMargin;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw grid lines
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1;
+            
+            // Horizontal grid lines
+            for (let i = 0; i <= 5; i++) {
+                const y = chartMargin + (chartHeight * i / 5);
+                ctx.beginPath();
+                ctx.moveTo(chartMargin, y);
+                ctx.lineTo(chartMargin + chartWidth, y);
+                ctx.stroke();
+            }
+
+            // Draw axes
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(chartMargin, chartMargin);
+            ctx.lineTo(chartMargin, chartMargin + chartHeight);
+            ctx.lineTo(chartMargin + chartWidth, chartMargin + chartHeight);
+            ctx.stroke();
+
+            // Draw data lines
+            processedData.forEach(driver => {
+                ctx.strokeStyle = driver.color;
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                
+                let firstPoint = true;
+                driver.data.forEach(point => {
+                    const x = chartMargin + ((new Date(point.when) - minDate) / dateRange) * chartWidth;
+                    const y = chartMargin + chartHeight - ((point.value - minValue + padding) / (valueRange + 2 * padding)) * chartHeight;
+                    
+                    if (firstPoint) {
+                        ctx.moveTo(x, y);
+                        firstPoint = false;
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                });
+                
+                ctx.stroke();
+
+                // Draw points
+                ctx.fillStyle = driver.color;
+                driver.data.forEach(point => {
+                    const x = chartMargin + ((new Date(point.when) - minDate) / dateRange) * chartWidth;
+                    const y = chartMargin + chartHeight - ((point.value - minValue + padding) / (valueRange + 2 * padding)) * chartHeight;
+                    
+                    ctx.beginPath();
+                    ctx.arc(x, y, 4, 0, 2 * Math.PI);
+                    ctx.fill();
+                });
+            });
+
+            // Create legend
+            legend.innerHTML = processedData
+                .map(driver => `
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: ${driver.color}"></div>
+                        <span class="legend-name">${driver.name}</span>
+                    </div>
+                `).join('');
+        }
+
+        // Show content and hide loading
+        function showContent(category) {
+            document.getElementById(`${category}_loading`).style.display = 'none';
+            document.getElementById(`${category}_error`).style.display = 'none';
+            document.getElementById(`${category}_content`).style.display = 'block';
+        }
+
+        // Show error message
+        function showError(category, message) {
+            document.getElementById(`${category}_loading`).style.display = 'none';
+            document.getElementById(`${category}_content`).style.display = 'none';
+            const errorElement = document.getElementById(`${category}_error`);
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (chartsData[currentTab]) {
+                displayChart(currentTab, chartsData[currentTab]);
+            }
+        });
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTabData('sports_car');
+        });
+    </script>
+</body>
+</html>
