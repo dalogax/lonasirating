@@ -1,4 +1,4 @@
-# Lonas iRacing
+# Lonas iRacing - lonasiracing.dalogax.com
 
 This repository contains the Lonas iRacing site where team members can see their irating stats.
 
