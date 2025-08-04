@@ -268,6 +268,93 @@
             font-style: italic;
             padding: 40px;
         }
+
+        .stats-table {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-x: auto;
+        }
+
+        .stats-table h2 {
+            color: #EC232C;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .stats-table table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .stats-table th {
+            background: rgba(236, 35, 44, 0.1);
+            color: #EC232C;
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 2px solid rgba(236, 35, 44, 0.3);
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+
+        .stats-table th:first-child {
+            width: 120px;
+            min-width: 120px;
+        }
+
+        .stats-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        .stats-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stats-table .driver-name-cell {
+            font-weight: bold;
+            color: #4ecdc4;
+        }
+
+        .stats-table .percentage {
+            color: #ffeaa7;
+        }
+
+        .stats-table .date {
+            color: #96ceb4;
+        }
+
+        .stats-table .winner {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 8px;
+            font-weight: bold;
+            color: #FFD700 !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .stats-table {
+                font-size: 0.8rem;
+            }
+            
+            .stats-table th,
+            .stats-table td {
+                padding: 8px 4px;
+            }
+            
+            .stats-table th:first-child {
+                width: 80px;
+                min-width: 80px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -295,6 +382,10 @@
                     <canvas id="sports_car_chart" class="chart"></canvas>
                     <div id="sports_car_legend" class="legend"></div>
                 </div>
+                <div class="stats-table">
+                    <h2>Detailed Statistics Comparison</h2>
+                    <div id="sports_car_stats_table"></div>
+                </div>
             </div>
         </div>
 
@@ -310,6 +401,10 @@
                     <h2>12-Month iRating History</h2>
                     <canvas id="formula_car_chart" class="chart"></canvas>
                     <div id="formula_car_legend" class="legend"></div>
+                </div>
+                <div class="stats-table">
+                    <h2>Detailed Statistics Comparison</h2>
+                    <div id="formula_car_stats_table"></div>
                 </div>
             </div>
         </div>
@@ -377,6 +472,7 @@
 
                 chartsData[category] = validData;
                 displayLeaderboard(category, validData);
+                displayStatsTable(category, validData);
                 showContent(category);
                 
                 // Add a delay to ensure DOM is fully rendered and visible before drawing chart
@@ -412,7 +508,10 @@
                     name: member.name,
                     id: member.id,
                     currentRating: data[category].iRating.value,
-                    chartData: chartData
+                    chartData: chartData,
+                    stats: data[category],
+                    memberSince: data.member_since,
+                    lastLogin: data.last_login
                 };
                 
             } catch (error) {
@@ -443,6 +542,169 @@
                         </div>
                     `;
                 }).join('');
+        }
+
+        // Display stats comparison table
+        function displayStatsTable(category, data) {
+            const statsContainer = document.getElementById(`${category}_stats_table`);
+            
+            // Sort by current iRating (descending) to match leaderboard order
+            const sortedData = data.sort((a, b) => b.currentRating - a.currentRating);
+            
+            const formatDate = (dateString) => {
+                if (!dateString) return 'N/A';
+                return new Date(dateString).toLocaleDateString();
+            };
+            
+            const formatPercentage = (value) => {
+                return value ? `${value}%` : '0%';
+            };
+            
+            const formatNumber = (value) => {
+                return value || 0;
+            };
+            
+            const formatAverage = (value) => {
+                return value ? value.toFixed(2) : '0.00';
+            };
+            
+            // Find the best value in each category
+            const findWinner = (field, isLowerBetter = false, isDate = false) => {
+                if (isDate) {
+                    const dates = sortedData.map(driver => {
+                        const dateValue = field === 'memberSince' ? driver.memberSince : driver.lastLogin;
+                        return dateValue ? new Date(dateValue) : null;
+                    }).filter(date => date !== null);
+                    
+                    if (dates.length === 0) return null;
+                    return isLowerBetter ? new Date(Math.min(...dates)) : new Date(Math.max(...dates));
+                }
+                
+                const values = sortedData.map(driver => {
+                    const stats = driver.stats || {};
+                    return stats[field] || 0;
+                }).filter(val => val > 0);
+                
+                if (values.length === 0) return null;
+                return isLowerBetter ? Math.min(...values) : Math.max(...values);
+            };
+            
+            const winners = {
+                irating: Math.max(...sortedData.map(d => d.currentRating)),
+                starts: findWinner('starts'),
+                wins: findWinner('wins'),
+                top5: findWinner('top5'),
+                poles: findWinner('poles'),
+                win_percentage: findWinner('win_percentage'),
+                top5_percentage: findWinner('top5_percentage'),
+                avg_start_position: findWinner('avg_start_position', true), // lower is better
+                avg_finish_position: findWinner('avg_finish_position', true), // lower is better
+                laps: findWinner('laps'),
+                laps_led: findWinner('laps_led'),
+                laps_led_percentage: findWinner('laps_led_percentage'),
+                avg_incidents: findWinner('avg_incidents', true), // lower is better
+                avg_points: findWinner('avg_points'),
+                member_since: findWinner('memberSince', true, true), // older is better
+                last_login: findWinner('lastLogin', false, true) // recent is better
+            };
+            
+            const isWinner = (value, winnerValue, isLowerBetter = false, isDate = false) => {
+                if (winnerValue === null || value === null) return false;
+                if (value === 0 && !isDate) return false;
+                
+                if (isDate) {
+                    const valueDate = new Date(value);
+                    return valueDate.getTime() === winnerValue.getTime();
+                }
+                
+                return isLowerBetter ? value === winnerValue : value === winnerValue;
+            };
+            
+            // Define stats structure for rows
+            const statsRows = [
+                { label: 'iRating', key: 'currentRating', format: formatNumber, winner: 'irating' },
+                { label: 'Starts', key: 'starts', format: formatNumber, winner: 'starts' },
+                { label: 'Wins', key: 'wins', format: formatNumber, winner: 'wins' },
+                { label: 'Top 5', key: 'top5', format: formatNumber, winner: 'top5' },
+                { label: 'Poles', key: 'poles', format: formatNumber, winner: 'poles' },
+                { label: 'Win %', key: 'win_percentage', format: formatPercentage, winner: 'win_percentage', isPercentage: true },
+                { label: 'Top 5 %', key: 'top5_percentage', format: formatPercentage, winner: 'top5_percentage', isPercentage: true },
+                { label: 'Avg Start Pos', key: 'avg_start_position', format: formatNumber, winner: 'avg_start_position', isLowerBetter: true },
+                { label: 'Avg Finish Pos', key: 'avg_finish_position', format: formatNumber, winner: 'avg_finish_position', isLowerBetter: true },
+                { label: 'Total Laps', key: 'laps', format: formatNumber, winner: 'laps' },
+                { label: 'Laps Led', key: 'laps_led', format: formatNumber, winner: 'laps_led' },
+                { label: 'Laps Led %', key: 'laps_led_percentage', format: formatPercentage, winner: 'laps_led_percentage', isPercentage: true },
+                { label: 'Avg Incidents', key: 'avg_incidents', format: formatAverage, winner: 'avg_incidents', isLowerBetter: true },
+                { label: 'Avg Points', key: 'avg_points', format: formatNumber, winner: 'avg_points' },
+                { label: 'Member Since', key: 'memberSince', format: formatDate, winner: 'member_since', isDate: true, isLowerBetter: true },
+                { label: 'Last Login', key: 'lastLogin', format: formatDate, winner: 'last_login', isDate: true }
+            ];
+            
+            let tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Statistic</th>
+            `;
+            
+            // Add driver names as column headers
+            sortedData.forEach(driver => {
+                tableHTML += `<th>${driver.name}</th>`;
+            });
+            
+            tableHTML += `
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            // Add each stat as a row
+            statsRows.forEach(statRow => {
+                tableHTML += `<tr><td class="driver-name-cell">${statRow.label}</td>`;
+                
+                sortedData.forEach(driver => {
+                    const stats = driver.stats || {};
+                    let value;
+                    
+                    if (statRow.key === 'currentRating') {
+                        value = driver.currentRating;
+                    } else if (statRow.key === 'memberSince' || statRow.key === 'lastLogin') {
+                        value = driver[statRow.key];
+                    } else {
+                        value = stats[statRow.key];
+                    }
+                    
+                    const formattedValue = statRow.format(value);
+                    const isWinnerCell = isWinner(value, winners[statRow.winner], statRow.isLowerBetter, statRow.isDate);
+                    
+                    let cellClass = '';
+                    if (isWinnerCell) {
+                        cellClass += 'winner ';
+                    }
+                    if (statRow.isPercentage) {
+                        cellClass += 'percentage ';
+                    }
+                    if (statRow.isDate) {
+                        cellClass += 'date ';
+                    }
+                    
+                    // Special handling for iRating badge
+                    if (statRow.key === 'currentRating') {
+                        tableHTML += `<td class="${cellClass}"><span class="irating">${formattedValue}</span></td>`;
+                    } else {
+                        tableHTML += `<td class="${cellClass}">${formattedValue}</td>`;
+                    }
+                });
+                
+                tableHTML += `</tr>`;
+            });
+            
+            tableHTML += `
+                    </tbody>
+                </table>
+            `;
+            
+            statsContainer.innerHTML = tableHTML;
         }
 
         // Display chart for a category
