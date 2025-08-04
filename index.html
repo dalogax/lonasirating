@@ -377,8 +377,12 @@
 
                 chartsData[category] = validData;
                 displayLeaderboard(category, validData);
-                displayChart(category, validData);
                 showContent(category);
+                
+                // Add a delay to ensure DOM is fully rendered and visible before drawing chart
+                setTimeout(() => {
+                    displayChart(category, validData);
+                }, 100);
                 
             } catch (error) {
                 showError(category, 'Failed to load data: ' + error.message);
@@ -449,9 +453,12 @@
             
             console.log(`Displaying chart for ${category} with data:`, data);
             
-            // Set canvas size
-            canvas.width = canvas.offsetWidth;
-            canvas.height = canvas.offsetHeight;
+            // Ensure canvas has proper dimensions
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+            
+            console.log(`Canvas dimensions: ${canvas.width}x${canvas.height}`);
             
             // Get last 12 months of data
             const cutoffDate = new Date();
