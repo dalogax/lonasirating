@@ -362,6 +362,7 @@
         <header class="header">
             <h1>Lonas iRacing</h1>
             <p>Team iRating Statistics</p>
+            <p id="last-update" style="font-size: 0.8rem; color: #888; margin-top: 10px;"></p>
         </header>
 
         <div class="tabs">
@@ -428,6 +429,7 @@
 
         let currentTab = 'sports_car';
         let chartsData = {};
+        let teamData = null; // Store the loaded team data
 
         // Switch between tabs
         function switchTab(tabName) {
@@ -455,20 +457,44 @@
             }
         }
 
-        // Load data for a specific tab
-        async function loadTabData(category) {
-            const promises = teamMembers.map(member => fetchMemberData(member, category));
+        // Load team data from single file
+        async function loadTeamData() {
+            if (teamData) return; // Already loaded
             
             try {
-                const results = await Promise.allSettled(promises);
-                const validData = results
-                    .filter(result => result.status === 'fulfilled' && result.value)
-                    .map(result => result.value);
+                const response = await fetch('data/team-data.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: Failed to load team data`);
+                }
+                
+                teamData = await response.json();
+                
+            } catch (error) {
+                console.error('Failed to load team data:', error);
+                throw error;
+            }
+        }
+
+        // Load data for a specific tab
+        async function loadTabData(category) {
+            try {
+                await loadTeamData();
+                
+                if (!teamData.data || !teamData.data[category]) {
+                    showError(category, 'No data available for category: ' + category);
+                    return;
+                }
+                
+                const validData = teamData.data[category].teamMembers || [];
                 
                 if (validData.length === 0) {
                     showError(category, 'No data available for any team members');
                     return;
                 }
+
+                // Update last update info
+                updateLastUpdateInfo(teamData.lastUpdate);
 
                 chartsData[category] = validData;
                 displayLeaderboard(category, validData);
@@ -485,38 +511,18 @@
             }
         }
 
-        // Fetch data for a specific member and category
-        async function fetchMemberData(member, category) {
-            try {
-                const response = await fetch(`https://iracing6-backend.herokuapp.com/api/member-career-stats/career/${member.id}`);
+        // Update last update info in the UI
+        function updateLastUpdateInfo(lastUpdate) {
+            if (lastUpdate) {
+                const date = new Date(lastUpdate);
+                const formattedDate = date.toLocaleString();
+                console.log(`Data last updated: ${formattedDate}`);
                 
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
+                // Update the UI element
+                const lastUpdateElement = document.getElementById('last-update');
+                if (lastUpdateElement) {
+                    lastUpdateElement.textContent = `Data last updated: ${formattedDate}`;
                 }
-                
-                const data = await response.json();
-                
-                if (!data[category] || !data[category].iRating) {
-                    console.log(`No data for ${member.name} in category ${category}`);
-                    return null;
-                }
-                
-                const chartData = data[category].iRating_chart?.data || [];
-                console.log(`Chart data for ${member.name} (${category}):`, chartData.length, 'points');
-                
-                return {
-                    name: member.name,
-                    id: member.id,
-                    currentRating: data[category].iRating.value,
-                    chartData: chartData,
-                    stats: data[category],
-                    memberSince: data.member_since,
-                    lastLogin: data.last_login
-                };
-                
-            } catch (error) {
-                console.error(`Error fetching data for ${member.name}:`, error);
-                return null;
             }
         }
 

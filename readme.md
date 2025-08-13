@@ -16,7 +16,7 @@ Example respones at example.json.
 
 ## Development
 
-The app will be only client side, the API supports CORS so it can be called directly from the browser.
+The app will be rendering pre-generated data fetched from the API daily using a GitHub Action.
 
 It will display irating statistics only for the classes sports_car and formula_car. Each class will be in one tab.
 
