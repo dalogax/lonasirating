@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-08-14T06:07:06Z",
+  "lastUpdate": "2025-08-15T06:07:11Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -470,23 +470,23 @@
               "success": true,
               "cust_id": 1301050
             },
-            "starts": 12,
+            "starts": 15,
             "wins": 0,
-            "top5": 4,
+            "top5": 6,
             "poles": 0,
             "avg_start_position": 7,
             "avg_finish_position": 8,
-            "laps": 146,
+            "laps": 199,
             "laps_led": 1,
-            "avg_incidents": 6.5,
-            "avg_points": 36,
+            "avg_incidents": 6.6,
+            "avg_points": 37,
             "win_percentage": 0,
-            "top5_percentage": 33.33,
-            "laps_led_percentage": 0.68
+            "top5_percentage": 40,
+            "laps_led_percentage": 0.5
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-08-13T16:15:43.331386886Z",
-          "lastUpdate": "2025-08-13T16:30:41.996Z"
+          "lastLogin": "2025-08-14T01:23:52.11542116Z",
+          "lastUpdate": "2025-08-14T18:31:49.561Z"
         },
         {
           "name": "Marcos",
@@ -2172,8 +2172,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-08-13T16:15:43.331386886Z",
-          "lastUpdate": "2025-08-13T16:30:41.996Z"
+          "lastLogin": "2025-08-14T01:23:52.11542116Z",
+          "lastUpdate": "2025-08-14T18:31:49.561Z"
         },
         {
           "name": "Marcos",
