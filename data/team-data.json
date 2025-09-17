@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-09-16T06:06:54Z",
+  "lastUpdate": "2025-09-17T06:06:55Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -468,13 +468,13 @@
               "value": 1522
             },
             {
-              "when": "2025-09-03",
+              "when": "2025-09-16",
               "value": 1580
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-09-03",
+              "when": "2025-09-16",
               "value": 1580
             },
             "iRating_chart": {
@@ -503,30 +503,30 @@
                   "value": 1522
                 },
                 {
-                  "when": "2025-09-03",
+                  "when": "2025-09-16",
                   "value": 1580
                 }
               ],
               "success": true,
               "cust_id": 1301050
             },
-            "starts": 28,
-            "wins": 0,
-            "top5": 10,
+            "starts": 30,
+            "wins": 1,
+            "top5": 11,
             "poles": 1,
             "avg_start_position": 8,
-            "avg_finish_position": 9,
-            "laps": 356,
-            "laps_led": 1,
-            "avg_incidents": 7.75,
-            "avg_points": 45,
-            "win_percentage": 0,
-            "top5_percentage": 35.71,
-            "laps_led_percentage": 0.28
+            "avg_finish_position": 8,
+            "laps": 384,
+            "laps_led": 13,
+            "avg_incidents": 7.6667,
+            "avg_points": 48,
+            "win_percentage": 3.33,
+            "top5_percentage": 36.67,
+            "laps_led_percentage": 3.39
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-09-10T19:59:14.376513449Z",
-          "lastUpdate": "2025-09-12T06:07:15.771Z"
+          "lastLogin": "2025-09-16T23:13:11.362813154Z",
+          "lastUpdate": "2025-09-16T23:35:31.565Z"
         },
         {
           "name": "Marcos",
@@ -2340,8 +2340,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-09-10T19:59:14.376513449Z",
-          "lastUpdate": "2025-09-12T06:07:15.771Z"
+          "lastLogin": "2025-09-16T23:13:11.362813154Z",
+          "lastUpdate": "2025-09-16T23:35:31.565Z"
         },
         {
           "name": "Marcos",
