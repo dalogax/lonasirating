@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-09-22T06:07:14Z",
+  "lastUpdate": "2025-09-23T06:06:59Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -453,7 +453,7 @@
           "name": "Rubén",
           "id": 1301050,
           "category": "sports_car",
-          "currentRating": 1828,
+          "currentRating": 2009,
           "chartData": [
             {
               "when": "2025-07-28",
@@ -480,14 +480,14 @@
               "value": 1580
             },
             {
-              "when": "2025-09-20",
-              "value": 1828
+              "when": "2025-09-22",
+              "value": 2009
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-09-20",
-              "value": 1828
+              "when": "2025-09-22",
+              "value": 2009
             },
             "iRating_chart": {
               "blackout": false,
@@ -519,8 +519,8 @@
                   "value": 1580
                 },
                 {
-                  "when": "2025-09-20",
-                  "value": 1828
+                  "when": "2025-09-22",
+                  "value": 2009
                 }
               ],
               "success": true,
@@ -541,8 +541,8 @@
             "laps_led_percentage": 2.48
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-09-21T18:16:22.871450327Z",
-          "lastUpdate": "2025-09-21T20:36:40.722Z"
+          "lastLogin": "2025-09-22T02:27:39.767445217Z",
+          "lastUpdate": "2025-09-22T08:46:07.318Z"
         },
         {
           "name": "Marcos",
@@ -2404,8 +2404,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-09-21T18:16:22.871450327Z",
-          "lastUpdate": "2025-09-21T20:36:40.722Z"
+          "lastLogin": "2025-09-22T02:27:39.767445217Z",
+          "lastUpdate": "2025-09-22T08:46:07.318Z"
         },
         {
           "name": "Marcos",
