@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-10-25T06:06:23Z",
+  "lastUpdate": "2025-10-26T06:06:22Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -38,7 +38,7 @@
           "name": "Porta",
           "id": 900904,
           "category": "sports_car",
-          "currentRating": 2097,
+          "currentRating": 2074,
           "chartData": [
             {
               "when": "2024-03-06",
@@ -239,12 +239,16 @@
             {
               "when": "2025-10-12",
               "value": 2097
+            },
+            {
+              "when": "2025-10-25",
+              "value": 2074
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-10-12",
-              "value": 2097
+              "when": "2025-10-25",
+              "value": 2074
             },
             "iRating_chart": {
               "blackout": false,
@@ -450,34 +454,38 @@
                 {
                   "when": "2025-10-12",
                   "value": 2097
+                },
+                {
+                  "when": "2025-10-25",
+                  "value": 2074
                 }
               ],
               "success": true,
               "cust_id": 900904
             },
-            "starts": 183,
+            "starts": 184,
             "wins": 5,
             "top5": 53,
             "poles": 0,
             "avg_start_position": 10,
             "avg_finish_position": 10,
-            "laps": 2273,
+            "laps": 2285,
             "laps_led": 44,
-            "avg_incidents": 7.3956,
+            "avg_incidents": 7.4317,
             "avg_points": 55,
-            "win_percentage": 2.73,
-            "top5_percentage": 28.96,
-            "laps_led_percentage": 1.94
+            "win_percentage": 2.72,
+            "top5_percentage": 28.8,
+            "laps_led_percentage": 1.93
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2025-10-19T14:45:17.39510077Z",
-          "lastUpdate": "2025-10-21T06:07:29.100Z"
+          "lastLogin": "2025-10-24T17:11:51.494818475Z",
+          "lastUpdate": "2025-10-25T13:50:09.000Z"
         },
         {
           "name": "Rubén",
           "id": 1301050,
           "category": "sports_car",
-          "currentRating": 2085,
+          "currentRating": 2083,
           "chartData": [
             {
               "when": "2025-07-28",
@@ -516,14 +524,14 @@
               "value": 2015
             },
             {
-              "when": "2025-10-15",
-              "value": 2085
+              "when": "2025-10-25",
+              "value": 2083
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-10-15",
-              "value": 2085
+              "when": "2025-10-25",
+              "value": 2083
             },
             "iRating_chart": {
               "blackout": false,
@@ -567,30 +575,30 @@
                   "value": 2015
                 },
                 {
-                  "when": "2025-10-15",
-                  "value": 2085
+                  "when": "2025-10-25",
+                  "value": 2083
                 }
               ],
               "success": true,
               "cust_id": 1301050
             },
-            "starts": 54,
+            "starts": 59,
             "wins": 4,
-            "top5": 17,
+            "top5": 18,
             "poles": 6,
             "avg_start_position": 9,
             "avg_finish_position": 10,
-            "laps": 769,
+            "laps": 837,
             "laps_led": 26,
-            "avg_incidents": 8.5926,
-            "avg_points": 56,
-            "win_percentage": 7.41,
-            "top5_percentage": 31.48,
-            "laps_led_percentage": 3.38
+            "avg_incidents": 8.5593,
+            "avg_points": 58,
+            "win_percentage": 6.78,
+            "top5_percentage": 30.51,
+            "laps_led_percentage": 3.11
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-10-22T20:19:03.93937782Z",
-          "lastUpdate": "2025-10-23T06:07:10.251Z"
+          "lastLogin": "2025-10-25T13:41:32.743021217Z",
+          "lastUpdate": "2025-10-25T13:48:56.140Z"
         },
         {
           "name": "Marcos",
@@ -981,23 +989,23 @@
               "success": true,
               "cust_id": 1094362
             },
-            "starts": 212,
+            "starts": 213,
             "wins": 17,
             "top5": 70,
             "poles": 20,
             "avg_start_position": 7,
             "avg_finish_position": 9,
-            "laps": 2272,
+            "laps": 2280,
             "laps_led": 200,
-            "avg_incidents": 6.8255,
+            "avg_incidents": 6.8122,
             "avg_points": 41,
-            "win_percentage": 8.02,
-            "top5_percentage": 33.02,
-            "laps_led_percentage": 8.8
+            "win_percentage": 7.98,
+            "top5_percentage": 32.86,
+            "laps_led_percentage": 8.77
           },
           "memberSince": "2024-07-25",
-          "lastLogin": "2025-10-19T11:51:43.122806213Z",
-          "lastUpdate": "2025-10-21T06:07:34.644Z"
+          "lastLogin": "2025-10-25T06:31:41Z",
+          "lastUpdate": "2025-10-25T13:49:29.691Z"
         },
         {
           "name": "Samu",
@@ -1371,8 +1379,8 @@
             "laps_led_percentage": 3.19
           },
           "memberSince": "2024-07-28",
-          "lastLogin": "2025-10-19T23:44:59.074709828Z",
-          "lastUpdate": "2025-10-21T06:07:37.991Z"
+          "lastLogin": "2025-10-25T07:46:47.026566334Z",
+          "lastUpdate": "2025-10-25T13:49:33.743Z"
         },
         {
           "name": "Dalogax",
@@ -2453,8 +2461,8 @@
             "laps_led_percentage": 9.62
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2025-10-19T14:45:17.39510077Z",
-          "lastUpdate": "2025-10-21T06:07:29.100Z"
+          "lastLogin": "2025-10-24T17:11:51.494818475Z",
+          "lastUpdate": "2025-10-25T13:50:09.000Z"
         },
         {
           "name": "Rubén",
@@ -2500,8 +2508,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-10-22T20:19:03.93937782Z",
-          "lastUpdate": "2025-10-23T06:07:10.251Z"
+          "lastLogin": "2025-10-25T13:41:32.743021217Z",
+          "lastUpdate": "2025-10-25T13:48:56.140Z"
         },
         {
           "name": "Marcos",
@@ -2675,8 +2683,8 @@
             "laps_led_percentage": 10.77
           },
           "memberSince": "2024-07-25",
-          "lastLogin": "2025-10-19T11:51:43.122806213Z",
-          "lastUpdate": "2025-10-21T06:07:34.644Z"
+          "lastLogin": "2025-10-25T06:31:41Z",
+          "lastUpdate": "2025-10-25T13:49:29.691Z"
         },
         {
           "name": "Samu",
@@ -2794,8 +2802,8 @@
             "laps_led_percentage": 8.17
           },
           "memberSince": "2024-07-28",
-          "lastLogin": "2025-10-19T23:44:59.074709828Z",
-          "lastUpdate": "2025-10-21T06:07:37.991Z"
+          "lastLogin": "2025-10-25T07:46:47.026566334Z",
+          "lastUpdate": "2025-10-25T13:49:33.743Z"
         },
         {
           "name": "Dalogax",
