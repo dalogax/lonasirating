@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-10-26T06:06:22Z",
+  "lastUpdate": "2025-10-27T06:08:06Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -485,7 +485,7 @@
           "name": "Rubén",
           "id": 1301050,
           "category": "sports_car",
-          "currentRating": 2083,
+          "currentRating": 2142,
           "chartData": [
             {
               "when": "2025-07-28",
@@ -526,12 +526,16 @@
             {
               "when": "2025-10-25",
               "value": 2083
+            },
+            {
+              "when": "2025-10-26",
+              "value": 2142
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-10-25",
-              "value": 2083
+              "when": "2025-10-26",
+              "value": 2142
             },
             "iRating_chart": {
               "blackout": false,
@@ -577,28 +581,32 @@
                 {
                   "when": "2025-10-25",
                   "value": 2083
+                },
+                {
+                  "when": "2025-10-26",
+                  "value": 2142
                 }
               ],
               "success": true,
               "cust_id": 1301050
             },
-            "starts": 59,
+            "starts": 60,
             "wins": 4,
-            "top5": 18,
+            "top5": 19,
             "poles": 6,
-            "avg_start_position": 9,
+            "avg_start_position": 8,
             "avg_finish_position": 10,
-            "laps": 837,
+            "laps": 908,
             "laps_led": 26,
-            "avg_incidents": 8.5593,
-            "avg_points": 58,
-            "win_percentage": 6.78,
-            "top5_percentage": 30.51,
-            "laps_led_percentage": 3.11
+            "avg_incidents": 8.6667,
+            "avg_points": 59,
+            "win_percentage": 6.67,
+            "top5_percentage": 31.67,
+            "laps_led_percentage": 2.86
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-10-25T13:41:32.743021217Z",
-          "lastUpdate": "2025-10-25T13:48:56.140Z"
+          "lastLogin": "2025-10-26T23:55:22.228608417Z",
+          "lastUpdate": "2025-10-27T00:09:08.353Z"
         },
         {
           "name": "Marcos",
@@ -2508,8 +2516,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-10-25T13:41:32.743021217Z",
-          "lastUpdate": "2025-10-25T13:48:56.140Z"
+          "lastLogin": "2025-10-26T23:55:22.228608417Z",
+          "lastUpdate": "2025-10-27T00:09:08.353Z"
         },
         {
           "name": "Marcos",
