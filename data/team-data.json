@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-18T06:06:52Z",
+  "lastUpdate": "2025-11-19T06:06:55Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -34,149 +34,6 @@
   "data": {
     "sports_car": {
       "teamMembers": [
-        {
-          "name": "Rubén",
-          "id": 1301050,
-          "category": "sports_car",
-          "currentRating": 2167,
-          "chartData": [
-            {
-              "when": "2025-07-28",
-              "value": 1350
-            },
-            {
-              "when": "2025-08-16",
-              "value": 1282
-            },
-            {
-              "when": "2025-08-18",
-              "value": 1372
-            },
-            {
-              "when": "2025-08-25",
-              "value": 1495
-            },
-            {
-              "when": "2025-09-01",
-              "value": 1522
-            },
-            {
-              "when": "2025-09-16",
-              "value": 1580
-            },
-            {
-              "when": "2025-09-22",
-              "value": 2009
-            },
-            {
-              "when": "2025-09-29",
-              "value": 2071
-            },
-            {
-              "when": "2025-10-14",
-              "value": 2015
-            },
-            {
-              "when": "2025-10-25",
-              "value": 2083
-            },
-            {
-              "when": "2025-10-27",
-              "value": 2215
-            },
-            {
-              "when": "2025-11-07",
-              "value": 2189
-            },
-            {
-              "when": "2025-11-10",
-              "value": 2167
-            }
-          ],
-          "stats": {
-            "iRating": {
-              "when": "2025-11-10",
-              "value": 2167
-            },
-            "iRating_chart": {
-              "blackout": false,
-              "category_id": 5,
-              "chart_type": 1,
-              "data": [
-                {
-                  "when": "2025-07-28",
-                  "value": 1350
-                },
-                {
-                  "when": "2025-08-16",
-                  "value": 1282
-                },
-                {
-                  "when": "2025-08-18",
-                  "value": 1372
-                },
-                {
-                  "when": "2025-08-25",
-                  "value": 1495
-                },
-                {
-                  "when": "2025-09-01",
-                  "value": 1522
-                },
-                {
-                  "when": "2025-09-16",
-                  "value": 1580
-                },
-                {
-                  "when": "2025-09-22",
-                  "value": 2009
-                },
-                {
-                  "when": "2025-09-29",
-                  "value": 2071
-                },
-                {
-                  "when": "2025-10-14",
-                  "value": 2015
-                },
-                {
-                  "when": "2025-10-25",
-                  "value": 2083
-                },
-                {
-                  "when": "2025-10-27",
-                  "value": 2215
-                },
-                {
-                  "when": "2025-11-07",
-                  "value": 2189
-                },
-                {
-                  "when": "2025-11-10",
-                  "value": 2167
-                }
-              ],
-              "success": true,
-              "cust_id": 1301050
-            },
-            "starts": 63,
-            "wins": 4,
-            "top5": 19,
-            "poles": 6,
-            "avg_start_position": 9,
-            "avg_finish_position": 10,
-            "laps": 1010,
-            "laps_led": 26,
-            "avg_incidents": 9.0645,
-            "avg_points": 59,
-            "win_percentage": 6.35,
-            "top5_percentage": 30.16,
-            "laps_led_percentage": 2.57
-          },
-          "memberSince": "2025-07-27",
-          "lastLogin": "2025-11-10T04:52:59.192117629Z",
-          "lastUpdate": "2025-11-10T06:08:07.063Z"
-        },
         {
           "name": "Porta",
           "id": 900904,
@@ -649,6 +506,159 @@
           "memberSince": "2023-05-05",
           "lastLogin": "2025-11-16T17:44:48.604773428Z",
           "lastUpdate": "2025-11-17T06:08:07.865Z"
+        },
+        {
+          "name": "Rubén",
+          "id": 1301050,
+          "category": "sports_car",
+          "currentRating": 2165,
+          "chartData": [
+            {
+              "when": "2025-07-28",
+              "value": 1350
+            },
+            {
+              "when": "2025-08-16",
+              "value": 1282
+            },
+            {
+              "when": "2025-08-18",
+              "value": 1372
+            },
+            {
+              "when": "2025-08-25",
+              "value": 1495
+            },
+            {
+              "when": "2025-09-01",
+              "value": 1522
+            },
+            {
+              "when": "2025-09-16",
+              "value": 1580
+            },
+            {
+              "when": "2025-09-22",
+              "value": 2009
+            },
+            {
+              "when": "2025-09-29",
+              "value": 2071
+            },
+            {
+              "when": "2025-10-14",
+              "value": 2015
+            },
+            {
+              "when": "2025-10-25",
+              "value": 2083
+            },
+            {
+              "when": "2025-10-27",
+              "value": 2215
+            },
+            {
+              "when": "2025-11-07",
+              "value": 2189
+            },
+            {
+              "when": "2025-11-10",
+              "value": 2167
+            },
+            {
+              "when": "2025-11-16",
+              "value": 2165
+            }
+          ],
+          "stats": {
+            "iRating": {
+              "when": "2025-11-16",
+              "value": 2165
+            },
+            "iRating_chart": {
+              "blackout": false,
+              "category_id": 5,
+              "chart_type": 1,
+              "data": [
+                {
+                  "when": "2025-07-28",
+                  "value": 1350
+                },
+                {
+                  "when": "2025-08-16",
+                  "value": 1282
+                },
+                {
+                  "when": "2025-08-18",
+                  "value": 1372
+                },
+                {
+                  "when": "2025-08-25",
+                  "value": 1495
+                },
+                {
+                  "when": "2025-09-01",
+                  "value": 1522
+                },
+                {
+                  "when": "2025-09-16",
+                  "value": 1580
+                },
+                {
+                  "when": "2025-09-22",
+                  "value": 2009
+                },
+                {
+                  "when": "2025-09-29",
+                  "value": 2071
+                },
+                {
+                  "when": "2025-10-14",
+                  "value": 2015
+                },
+                {
+                  "when": "2025-10-25",
+                  "value": 2083
+                },
+                {
+                  "when": "2025-10-27",
+                  "value": 2215
+                },
+                {
+                  "when": "2025-11-07",
+                  "value": 2189
+                },
+                {
+                  "when": "2025-11-10",
+                  "value": 2167
+                },
+                {
+                  "when": "2025-11-16",
+                  "value": 2165
+                }
+              ],
+              "success": true,
+              "cust_id": 1301050
+            },
+            "safety_rating": 3.45,
+            "license_level": 11,
+            "starts": 64,
+            "wins": 4,
+            "top5": 19,
+            "poles": 6,
+            "avg_start_position": 9,
+            "avg_finish_position": 10,
+            "laps": 1118,
+            "laps_led": 26,
+            "avg_incidents": 9.0645,
+            "avg_points": 59,
+            "win_percentage": 6.25,
+            "top5_percentage": 29.69,
+            "laps_led_percentage": 2.33
+          },
+          "memberSince": "2025-07-27",
+          "lastLogin": "2025-11-18T03:47:21.181153662Z",
+          "lastUpdate": "2025-11-18T06:07:04.670Z"
         },
         {
           "name": "Marcos",
@@ -2416,53 +2426,6 @@
     "formula_car": {
       "teamMembers": [
         {
-          "name": "Rubén",
-          "id": 1301050,
-          "category": "formula_car",
-          "currentRating": 1350,
-          "chartData": [
-            {
-              "when": "2025-07-28",
-              "value": 1350
-            }
-          ],
-          "stats": {
-            "iRating": {
-              "when": "2025-07-28",
-              "value": 1350
-            },
-            "iRating_chart": {
-              "blackout": false,
-              "category_id": 6,
-              "chart_type": 1,
-              "data": [
-                {
-                  "when": "2025-07-28",
-                  "value": 1350
-                }
-              ],
-              "success": true,
-              "cust_id": 1301050
-            },
-            "starts": 0,
-            "wins": 0,
-            "top5": 0,
-            "poles": 0,
-            "avg_start_position": 0,
-            "avg_finish_position": 0,
-            "laps": 0,
-            "laps_led": 0,
-            "avg_incidents": 0,
-            "avg_points": 0,
-            "win_percentage": 0,
-            "top5_percentage": 0,
-            "laps_led_percentage": 0
-          },
-          "memberSince": "2025-07-27",
-          "lastLogin": "2025-11-10T04:52:59.192117629Z",
-          "lastUpdate": "2025-11-10T06:08:07.063Z"
-        },
-        {
           "name": "Porta",
           "id": 900904,
           "category": "formula_car",
@@ -2622,6 +2585,55 @@
           "memberSince": "2023-05-05",
           "lastLogin": "2025-11-16T17:44:48.604773428Z",
           "lastUpdate": "2025-11-17T06:08:07.865Z"
+        },
+        {
+          "name": "Rubén",
+          "id": 1301050,
+          "category": "formula_car",
+          "currentRating": 1350,
+          "chartData": [
+            {
+              "when": "2025-07-28",
+              "value": 1350
+            }
+          ],
+          "stats": {
+            "iRating": {
+              "when": "2025-07-28",
+              "value": 1350
+            },
+            "iRating_chart": {
+              "blackout": false,
+              "category_id": 6,
+              "chart_type": 1,
+              "data": [
+                {
+                  "when": "2025-07-28",
+                  "value": 1350
+                }
+              ],
+              "success": true,
+              "cust_id": 1301050
+            },
+            "safety_rating": 2.5,
+            "license_level": 2,
+            "starts": 0,
+            "wins": 0,
+            "top5": 0,
+            "poles": 0,
+            "avg_start_position": 0,
+            "avg_finish_position": 0,
+            "laps": 0,
+            "laps_led": 0,
+            "avg_incidents": 0,
+            "avg_points": 0,
+            "win_percentage": 0,
+            "top5_percentage": 0,
+            "laps_led_percentage": 0
+          },
+          "memberSince": "2025-07-27",
+          "lastLogin": "2025-11-18T03:47:21.181153662Z",
+          "lastUpdate": "2025-11-18T06:07:04.670Z"
         },
         {
           "name": "Marcos",
