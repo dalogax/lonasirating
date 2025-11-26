@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-25T06:07:16Z",
+  "lastUpdate": "2025-11-26T06:07:48Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -38,7 +38,7 @@
           "name": "Porta",
           "id": 900904,
           "category": "sports_car",
-          "currentRating": 2061,
+          "currentRating": 1870,
           "chartData": [
             {
               "when": "2024-03-06",
@@ -253,14 +253,18 @@
               "value": 2040
             },
             {
-              "when": "2025-11-16",
-              "value": 2061
+              "when": "2025-11-23",
+              "value": 1967
+            },
+            {
+              "when": "2025-11-24",
+              "value": 1870
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-11-16",
-              "value": 2061
+              "when": "2025-11-24",
+              "value": 1870
             },
             "iRating_chart": {
               "blackout": false,
@@ -480,32 +484,36 @@
                   "value": 2040
                 },
                 {
-                  "when": "2025-11-16",
-                  "value": 2061
+                  "when": "2025-11-23",
+                  "value": 1967
+                },
+                {
+                  "when": "2025-11-24",
+                  "value": 1870
                 }
               ],
               "success": true,
               "cust_id": 900904
             },
-            "safety_rating": 3.55,
+            "safety_rating": 3.22,
             "license_level": 15,
-            "starts": 187,
+            "starts": 189,
             "wins": 5,
             "top5": 53,
             "poles": 0,
             "avg_start_position": 10,
             "avg_finish_position": 10,
-            "laps": 2412,
+            "laps": 2420,
             "laps_led": 44,
-            "avg_incidents": 7.4348,
-            "avg_points": 55,
-            "win_percentage": 2.67,
-            "top5_percentage": 28.34,
+            "avg_incidents": 7.4378,
+            "avg_points": 54,
+            "win_percentage": 2.65,
+            "top5_percentage": 28.04,
             "laps_led_percentage": 1.82
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2025-11-16T17:44:48.604773428Z",
-          "lastUpdate": "2025-11-17T06:08:07.865Z"
+          "lastLogin": "2025-11-23T16:12:27Z",
+          "lastUpdate": "2025-11-25T06:07:22.200Z"
         },
         {
           "name": "Rubén",
@@ -657,8 +665,8 @@
             "laps_led_percentage": 2.33
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-11-18T03:47:21.181153662Z",
-          "lastUpdate": "2025-11-18T06:07:04.670Z"
+          "lastLogin": "2025-11-23T22:22:39.848752494Z",
+          "lastUpdate": "2025-11-25T06:07:25.805Z"
         },
         {
           "name": "Marcos",
@@ -1091,7 +1099,7 @@
           },
           "memberSince": "2024-07-25",
           "lastLogin": "2025-11-15T09:13:15.551653044Z",
-          "lastUpdate": "2025-11-17T06:08:12.369Z"
+          "lastUpdate": "2025-11-25T06:07:29.307Z"
         },
         {
           "name": "Samu",
@@ -1663,8 +1671,8 @@
             "laps_led_percentage": 9.62
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2025-11-16T17:44:48.604773428Z",
-          "lastUpdate": "2025-11-17T06:08:07.865Z"
+          "lastLogin": "2025-11-23T16:12:27Z",
+          "lastUpdate": "2025-11-25T06:07:22.200Z"
         },
         {
           "name": "Rubén",
@@ -1712,8 +1720,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-11-18T03:47:21.181153662Z",
-          "lastUpdate": "2025-11-18T06:07:04.670Z"
+          "lastLogin": "2025-11-23T22:22:39.848752494Z",
+          "lastUpdate": "2025-11-25T06:07:25.805Z"
         },
         {
           "name": "Marcos",
@@ -1890,7 +1898,7 @@
           },
           "memberSince": "2024-07-25",
           "lastLogin": "2025-11-15T09:13:15.551653044Z",
-          "lastUpdate": "2025-11-17T06:08:12.369Z"
+          "lastUpdate": "2025-11-25T06:07:29.307Z"
         },
         {
           "name": "Samu",
