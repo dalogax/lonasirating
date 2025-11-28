@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-11-27T06:07:27Z",
+  "lastUpdate": "2025-11-28T06:07:36Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -35,349 +35,35 @@
     "sports_car": {
       "teamMembers": [
         {
-          "name": "Dalogax",
-          "id": 305408,
+          "name": "Luis",
+          "id": 918399,
           "category": "sports_car",
-          "currentRating": 1152,
-          "chartData": [
-            {
-              "when": "2024-03-06",
-              "value": 1164
-            },
-            {
-              "when": "2024-09-01",
-              "value": 1044
-            },
-            {
-              "when": "2024-09-03",
-              "value": 1025
-            },
-            {
-              "when": "2024-09-21",
-              "value": 972
-            },
-            {
-              "when": "2024-09-23",
-              "value": 777
-            },
-            {
-              "when": "2024-10-15",
-              "value": 758
-            },
-            {
-              "when": "2024-10-23",
-              "value": 738
-            },
-            {
-              "when": "2024-11-06",
-              "value": 761
-            },
-            {
-              "when": "2024-11-26",
-              "value": 741
-            },
-            {
-              "when": "2024-12-04",
-              "value": 790
-            },
-            {
-              "when": "2024-12-09",
-              "value": 793
-            },
-            {
-              "when": "2024-12-17",
-              "value": 826
-            },
-            {
-              "when": "2024-12-31",
-              "value": 804
-            },
-            {
-              "when": "2025-01-15",
-              "value": 824
-            },
-            {
-              "when": "2025-01-26",
-              "value": 846
-            },
-            {
-              "when": "2025-01-27",
-              "value": 923
-            },
-            {
-              "when": "2025-02-04",
-              "value": 1005
-            },
-            {
-              "when": "2025-02-20",
-              "value": 960
-            },
-            {
-              "when": "2025-03-09",
-              "value": 1000
-            },
-            {
-              "when": "2025-03-10",
-              "value": 957
-            },
-            {
-              "when": "2025-03-17",
-              "value": 1125
-            },
-            {
-              "when": "2025-05-02",
-              "value": 1113
-            },
-            {
-              "when": "2025-05-10",
-              "value": 1058
-            },
-            {
-              "when": "2025-05-12",
-              "value": 1024
-            },
-            {
-              "when": "2025-06-29",
-              "value": 1029
-            },
-            {
-              "when": "2025-06-30",
-              "value": 1013
-            },
-            {
-              "when": "2025-07-20",
-              "value": 959
-            },
-            {
-              "when": "2025-07-24",
-              "value": 946
-            },
-            {
-              "when": "2025-07-30",
-              "value": 1002
-            },
-            {
-              "when": "2025-08-04",
-              "value": 1068
-            },
-            {
-              "when": "2025-08-14",
-              "value": 1021
-            },
-            {
-              "when": "2025-08-18",
-              "value": 1141
-            },
-            {
-              "when": "2025-08-27",
-              "value": 1153
-            },
-            {
-              "when": "2025-09-01",
-              "value": 1263
-            },
-            {
-              "when": "2025-09-08",
-              "value": 1134
-            },
-            {
-              "when": "2025-09-16",
-              "value": 1134
-            },
-            {
-              "when": "2025-11-10",
-              "value": 1133
-            },
-            {
-              "when": "2025-11-16",
-              "value": 1152
-            }
-          ],
+          "currentRating": 2674,
+          "chartData": [],
           "stats": {
             "iRating": {
-              "when": "2025-11-16",
-              "value": 1152
+              "when": "2025-11-21",
+              "value": 2674
             },
-            "iRating_chart": {
-              "blackout": false,
-              "category_id": 5,
-              "chart_type": 1,
-              "data": [
-                {
-                  "when": "2024-03-06",
-                  "value": 1164
-                },
-                {
-                  "when": "2024-09-01",
-                  "value": 1044
-                },
-                {
-                  "when": "2024-09-03",
-                  "value": 1025
-                },
-                {
-                  "when": "2024-09-21",
-                  "value": 972
-                },
-                {
-                  "when": "2024-09-23",
-                  "value": 777
-                },
-                {
-                  "when": "2024-10-15",
-                  "value": 758
-                },
-                {
-                  "when": "2024-10-23",
-                  "value": 738
-                },
-                {
-                  "when": "2024-11-06",
-                  "value": 761
-                },
-                {
-                  "when": "2024-11-26",
-                  "value": 741
-                },
-                {
-                  "when": "2024-12-04",
-                  "value": 790
-                },
-                {
-                  "when": "2024-12-09",
-                  "value": 793
-                },
-                {
-                  "when": "2024-12-17",
-                  "value": 826
-                },
-                {
-                  "when": "2024-12-31",
-                  "value": 804
-                },
-                {
-                  "when": "2025-01-15",
-                  "value": 824
-                },
-                {
-                  "when": "2025-01-26",
-                  "value": 846
-                },
-                {
-                  "when": "2025-01-27",
-                  "value": 923
-                },
-                {
-                  "when": "2025-02-04",
-                  "value": 1005
-                },
-                {
-                  "when": "2025-02-20",
-                  "value": 960
-                },
-                {
-                  "when": "2025-03-09",
-                  "value": 1000
-                },
-                {
-                  "when": "2025-03-10",
-                  "value": 957
-                },
-                {
-                  "when": "2025-03-17",
-                  "value": 1125
-                },
-                {
-                  "when": "2025-05-02",
-                  "value": 1113
-                },
-                {
-                  "when": "2025-05-10",
-                  "value": 1058
-                },
-                {
-                  "when": "2025-05-12",
-                  "value": 1024
-                },
-                {
-                  "when": "2025-06-29",
-                  "value": 1029
-                },
-                {
-                  "when": "2025-06-30",
-                  "value": 1013
-                },
-                {
-                  "when": "2025-07-20",
-                  "value": 959
-                },
-                {
-                  "when": "2025-07-24",
-                  "value": 946
-                },
-                {
-                  "when": "2025-07-30",
-                  "value": 1002
-                },
-                {
-                  "when": "2025-08-04",
-                  "value": 1068
-                },
-                {
-                  "when": "2025-08-14",
-                  "value": 1021
-                },
-                {
-                  "when": "2025-08-18",
-                  "value": 1141
-                },
-                {
-                  "when": "2025-08-27",
-                  "value": 1153
-                },
-                {
-                  "when": "2025-09-01",
-                  "value": 1263
-                },
-                {
-                  "when": "2025-09-08",
-                  "value": 1134
-                },
-                {
-                  "when": "2025-09-16",
-                  "value": 1134
-                },
-                {
-                  "when": "2025-11-10",
-                  "value": 1133
-                },
-                {
-                  "when": "2025-11-16",
-                  "value": 1152
-                }
-              ],
-              "success": true,
-              "cust_id": 305408
-            },
-            "safety_rating": 3.91,
+            "safety_rating": 3.72,
             "license_level": 19,
-            "starts": 93,
-            "wins": 1,
-            "top5": 18,
-            "poles": 0,
+            "starts": 393,
+            "wins": 25,
+            "top5": 144,
+            "poles": 17,
             "avg_start_position": 9,
-            "avg_finish_position": 9,
-            "laps": 1431,
-            "laps_led": 18,
-            "avg_incidents": 6.4333,
-            "avg_points": 29,
-            "win_percentage": 1.08,
-            "top5_percentage": 19.35,
-            "laps_led_percentage": 1.26
+            "avg_finish_position": 10,
+            "laps": 6810,
+            "laps_led": 291,
+            "avg_incidents": 7.3417,
+            "avg_points": 74,
+            "win_percentage": 6.36,
+            "top5_percentage": 36.64,
+            "laps_led_percentage": 4.27
           },
-          "memberSince": "2017-12-18",
-          "lastLogin": "2025-11-18T20:57:00.672357881Z",
-          "lastUpdate": "2025-11-20T06:07:25.488Z"
+          "memberSince": "2023-07-04",
+          "lastLogin": "2025-11-20T18:48:38Z",
+          "lastUpdate": "2025-11-21T06:02:39.637Z"
         },
         {
           "name": "Porta",
@@ -1478,144 +1164,172 @@
           "lastUpdate": "2025-11-24T02:25:52.703Z"
         },
         {
-          "name": "Luis",
-          "id": 918399,
-          "category": "sports_car",
-          "currentRating": 2674,
-          "chartData": [],
-          "stats": {
-            "iRating": {
-              "when": "2025-11-21",
-              "value": 2674
-            },
-            "safety_rating": 3.72,
-            "license_level": 19,
-            "starts": 393,
-            "wins": 25,
-            "top5": 144,
-            "poles": 17,
-            "avg_start_position": 9,
-            "avg_finish_position": 10,
-            "laps": 6810,
-            "laps_led": 291,
-            "avg_incidents": 7.3417,
-            "avg_points": 74,
-            "win_percentage": 6.36,
-            "top5_percentage": 36.64,
-            "laps_led_percentage": 4.27
-          },
-          "memberSince": "2023-07-04",
-          "lastLogin": "2025-11-20T18:48:38Z",
-          "lastUpdate": "2025-11-21T06:02:39.637Z"
-        }
-      ],
-      "memberCount": 6
-    },
-    "formula_car": {
-      "teamMembers": [
-        {
           "name": "Dalogax",
           "id": 305408,
-          "category": "formula_car",
-          "currentRating": 1209,
+          "category": "sports_car",
+          "currentRating": 1152,
           "chartData": [
             {
               "when": "2024-03-06",
               "value": 1164
             },
             {
-              "when": "2024-08-10",
-              "value": 1190
+              "when": "2024-09-01",
+              "value": 1044
             },
             {
-              "when": "2024-09-01",
-              "value": 1214
+              "when": "2024-09-03",
+              "value": 1025
+            },
+            {
+              "when": "2024-09-21",
+              "value": 972
+            },
+            {
+              "when": "2024-09-23",
+              "value": 777
+            },
+            {
+              "when": "2024-10-15",
+              "value": 758
+            },
+            {
+              "when": "2024-10-23",
+              "value": 738
             },
             {
               "when": "2024-11-06",
-              "value": 1213
+              "value": 761
             },
             {
-              "when": "2024-11-27",
-              "value": 1257
+              "when": "2024-11-26",
+              "value": 741
             },
             {
               "when": "2024-12-04",
-              "value": 1259
+              "value": 790
             },
             {
               "when": "2024-12-09",
-              "value": 1151
+              "value": 793
             },
             {
-              "when": "2025-02-02",
-              "value": 1078
+              "when": "2024-12-17",
+              "value": 826
             },
             {
-              "when": "2025-03-01",
-              "value": 1179
+              "when": "2024-12-31",
+              "value": 804
             },
             {
-              "when": "2025-03-12",
-              "value": 1329
+              "when": "2025-01-15",
+              "value": 824
             },
             {
-              "when": "2025-03-18",
-              "value": 1352
+              "when": "2025-01-26",
+              "value": 846
             },
             {
-              "when": "2025-05-19",
-              "value": 1291
+              "when": "2025-01-27",
+              "value": 923
             },
             {
-              "when": "2025-05-28",
-              "value": 1259
+              "when": "2025-02-04",
+              "value": 1005
             },
             {
-              "when": "2025-06-02",
-              "value": 1238
+              "when": "2025-02-20",
+              "value": 960
             },
             {
-              "when": "2025-06-09",
-              "value": 1319
+              "when": "2025-03-09",
+              "value": 1000
             },
             {
-              "when": "2025-06-16",
-              "value": 1321
+              "when": "2025-03-10",
+              "value": 957
             },
             {
-              "when": "2025-07-02",
-              "value": 1217
+              "when": "2025-03-17",
+              "value": 1125
             },
             {
-              "when": "2025-07-27",
-              "value": 1202
+              "when": "2025-05-02",
+              "value": 1113
             },
             {
-              "when": "2025-08-02",
-              "value": 1215
+              "when": "2025-05-10",
+              "value": 1058
+            },
+            {
+              "when": "2025-05-12",
+              "value": 1024
+            },
+            {
+              "when": "2025-06-29",
+              "value": 1029
+            },
+            {
+              "when": "2025-06-30",
+              "value": 1013
+            },
+            {
+              "when": "2025-07-20",
+              "value": 959
+            },
+            {
+              "when": "2025-07-24",
+              "value": 946
+            },
+            {
+              "when": "2025-07-30",
+              "value": 1002
+            },
+            {
+              "when": "2025-08-04",
+              "value": 1068
+            },
+            {
+              "when": "2025-08-14",
+              "value": 1021
+            },
+            {
+              "when": "2025-08-18",
+              "value": 1141
+            },
+            {
+              "when": "2025-08-27",
+              "value": 1153
+            },
+            {
+              "when": "2025-09-01",
+              "value": 1263
+            },
+            {
+              "when": "2025-09-08",
+              "value": 1134
             },
             {
               "when": "2025-09-16",
-              "value": 1215
+              "value": 1134
             },
             {
-              "when": "2025-09-22",
-              "value": 1210
+              "when": "2025-11-10",
+              "value": 1133
             },
             {
-              "when": "2025-10-09",
-              "value": 1209
+              "when": "2025-11-16",
+              "value": 1152
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-10-09",
-              "value": 1209
+              "when": "2025-11-16",
+              "value": 1152
             },
             "iRating_chart": {
               "blackout": false,
-              "category_id": 6,
+              "category_id": 5,
               "chart_type": 1,
               "data": [
                 {
@@ -1623,112 +1337,212 @@
                   "value": 1164
                 },
                 {
-                  "when": "2024-08-10",
-                  "value": 1190
+                  "when": "2024-09-01",
+                  "value": 1044
                 },
                 {
-                  "when": "2024-09-01",
-                  "value": 1214
+                  "when": "2024-09-03",
+                  "value": 1025
+                },
+                {
+                  "when": "2024-09-21",
+                  "value": 972
+                },
+                {
+                  "when": "2024-09-23",
+                  "value": 777
+                },
+                {
+                  "when": "2024-10-15",
+                  "value": 758
+                },
+                {
+                  "when": "2024-10-23",
+                  "value": 738
                 },
                 {
                   "when": "2024-11-06",
-                  "value": 1213
+                  "value": 761
                 },
                 {
-                  "when": "2024-11-27",
-                  "value": 1257
+                  "when": "2024-11-26",
+                  "value": 741
                 },
                 {
                   "when": "2024-12-04",
-                  "value": 1259
+                  "value": 790
                 },
                 {
                   "when": "2024-12-09",
-                  "value": 1151
+                  "value": 793
                 },
                 {
-                  "when": "2025-02-02",
-                  "value": 1078
+                  "when": "2024-12-17",
+                  "value": 826
                 },
                 {
-                  "when": "2025-03-01",
-                  "value": 1179
+                  "when": "2024-12-31",
+                  "value": 804
                 },
                 {
-                  "when": "2025-03-12",
-                  "value": 1329
+                  "when": "2025-01-15",
+                  "value": 824
                 },
                 {
-                  "when": "2025-03-18",
-                  "value": 1352
+                  "when": "2025-01-26",
+                  "value": 846
                 },
                 {
-                  "when": "2025-05-19",
-                  "value": 1291
+                  "when": "2025-01-27",
+                  "value": 923
                 },
                 {
-                  "when": "2025-05-28",
-                  "value": 1259
+                  "when": "2025-02-04",
+                  "value": 1005
                 },
                 {
-                  "when": "2025-06-02",
-                  "value": 1238
+                  "when": "2025-02-20",
+                  "value": 960
                 },
                 {
-                  "when": "2025-06-09",
-                  "value": 1319
+                  "when": "2025-03-09",
+                  "value": 1000
                 },
                 {
-                  "when": "2025-06-16",
-                  "value": 1321
+                  "when": "2025-03-10",
+                  "value": 957
                 },
                 {
-                  "when": "2025-07-02",
-                  "value": 1217
+                  "when": "2025-03-17",
+                  "value": 1125
                 },
                 {
-                  "when": "2025-07-27",
-                  "value": 1202
+                  "when": "2025-05-02",
+                  "value": 1113
                 },
                 {
-                  "when": "2025-08-02",
-                  "value": 1215
+                  "when": "2025-05-10",
+                  "value": 1058
+                },
+                {
+                  "when": "2025-05-12",
+                  "value": 1024
+                },
+                {
+                  "when": "2025-06-29",
+                  "value": 1029
+                },
+                {
+                  "when": "2025-06-30",
+                  "value": 1013
+                },
+                {
+                  "when": "2025-07-20",
+                  "value": 959
+                },
+                {
+                  "when": "2025-07-24",
+                  "value": 946
+                },
+                {
+                  "when": "2025-07-30",
+                  "value": 1002
+                },
+                {
+                  "when": "2025-08-04",
+                  "value": 1068
+                },
+                {
+                  "when": "2025-08-14",
+                  "value": 1021
+                },
+                {
+                  "when": "2025-08-18",
+                  "value": 1141
+                },
+                {
+                  "when": "2025-08-27",
+                  "value": 1153
+                },
+                {
+                  "when": "2025-09-01",
+                  "value": 1263
+                },
+                {
+                  "when": "2025-09-08",
+                  "value": 1134
                 },
                 {
                   "when": "2025-09-16",
-                  "value": 1215
+                  "value": 1134
                 },
                 {
-                  "when": "2025-09-22",
-                  "value": 1210
+                  "when": "2025-11-10",
+                  "value": 1133
                 },
                 {
-                  "when": "2025-10-09",
-                  "value": 1209
+                  "when": "2025-11-16",
+                  "value": 1152
                 }
               ],
               "success": true,
               "cust_id": 305408
             },
-            "safety_rating": 2.3,
-            "license_level": 14,
-            "starts": 60,
-            "wins": 0,
-            "top5": 8,
+            "safety_rating": 3.91,
+            "license_level": 19,
+            "starts": 93,
+            "wins": 1,
+            "top5": 18,
             "poles": 0,
-            "avg_start_position": 10,
-            "avg_finish_position": 10,
-            "laps": 666,
-            "laps_led": 1,
-            "avg_incidents": 5.6,
-            "avg_points": 38,
-            "win_percentage": 0,
-            "top5_percentage": 13.33,
-            "laps_led_percentage": 0.15
+            "avg_start_position": 9,
+            "avg_finish_position": 9,
+            "laps": 1431,
+            "laps_led": 18,
+            "avg_incidents": 6.4333,
+            "avg_points": 29,
+            "win_percentage": 1.08,
+            "top5_percentage": 19.35,
+            "laps_led_percentage": 1.26
           },
           "memberSince": "2017-12-18",
           "lastLogin": "2025-11-18T20:57:00.672357881Z",
-          "lastUpdate": "2025-11-20T06:07:25.488Z"
+          "lastUpdate": "2025-11-27T06:07:32.853Z"
+        }
+      ],
+      "memberCount": 6
+    },
+    "formula_car": {
+      "teamMembers": [
+        {
+          "name": "Luis",
+          "id": 918399,
+          "category": "formula_car",
+          "currentRating": 2058,
+          "chartData": [],
+          "stats": {
+            "iRating": {
+              "when": "2025-11-21",
+              "value": 2058
+            },
+            "safety_rating": 2.45,
+            "license_level": 10,
+            "starts": 46,
+            "wins": 4,
+            "top5": 17,
+            "poles": 3,
+            "avg_start_position": 11,
+            "avg_finish_position": 12,
+            "laps": 388,
+            "laps_led": 40,
+            "avg_incidents": 5.8913,
+            "avg_points": 60,
+            "win_percentage": 8.7,
+            "top5_percentage": 36.96,
+            "laps_led_percentage": 10.31
+          },
+          "memberSince": "2023-07-04",
+          "lastLogin": "2025-11-20T18:48:38Z",
+          "lastUpdate": "2025-11-21T06:02:39.637Z"
         },
         {
           "name": "Porta",
@@ -2149,35 +1963,221 @@
           "lastUpdate": "2025-11-24T02:25:52.703Z"
         },
         {
-          "name": "Luis",
-          "id": 918399,
+          "name": "Dalogax",
+          "id": 305408,
           "category": "formula_car",
-          "currentRating": 2058,
-          "chartData": [],
+          "currentRating": 1209,
+          "chartData": [
+            {
+              "when": "2024-03-06",
+              "value": 1164
+            },
+            {
+              "when": "2024-08-10",
+              "value": 1190
+            },
+            {
+              "when": "2024-09-01",
+              "value": 1214
+            },
+            {
+              "when": "2024-11-06",
+              "value": 1213
+            },
+            {
+              "when": "2024-11-27",
+              "value": 1257
+            },
+            {
+              "when": "2024-12-04",
+              "value": 1259
+            },
+            {
+              "when": "2024-12-09",
+              "value": 1151
+            },
+            {
+              "when": "2025-02-02",
+              "value": 1078
+            },
+            {
+              "when": "2025-03-01",
+              "value": 1179
+            },
+            {
+              "when": "2025-03-12",
+              "value": 1329
+            },
+            {
+              "when": "2025-03-18",
+              "value": 1352
+            },
+            {
+              "when": "2025-05-19",
+              "value": 1291
+            },
+            {
+              "when": "2025-05-28",
+              "value": 1259
+            },
+            {
+              "when": "2025-06-02",
+              "value": 1238
+            },
+            {
+              "when": "2025-06-09",
+              "value": 1319
+            },
+            {
+              "when": "2025-06-16",
+              "value": 1321
+            },
+            {
+              "when": "2025-07-02",
+              "value": 1217
+            },
+            {
+              "when": "2025-07-27",
+              "value": 1202
+            },
+            {
+              "when": "2025-08-02",
+              "value": 1215
+            },
+            {
+              "when": "2025-09-16",
+              "value": 1215
+            },
+            {
+              "when": "2025-09-22",
+              "value": 1210
+            },
+            {
+              "when": "2025-10-09",
+              "value": 1209
+            }
+          ],
           "stats": {
             "iRating": {
-              "when": "2025-11-21",
-              "value": 2058
+              "when": "2025-10-09",
+              "value": 1209
             },
-            "safety_rating": 2.45,
-            "license_level": 10,
-            "starts": 46,
-            "wins": 4,
-            "top5": 17,
-            "poles": 3,
-            "avg_start_position": 11,
-            "avg_finish_position": 12,
-            "laps": 388,
-            "laps_led": 40,
-            "avg_incidents": 5.8913,
-            "avg_points": 60,
-            "win_percentage": 8.7,
-            "top5_percentage": 36.96,
-            "laps_led_percentage": 10.31
+            "iRating_chart": {
+              "blackout": false,
+              "category_id": 6,
+              "chart_type": 1,
+              "data": [
+                {
+                  "when": "2024-03-06",
+                  "value": 1164
+                },
+                {
+                  "when": "2024-08-10",
+                  "value": 1190
+                },
+                {
+                  "when": "2024-09-01",
+                  "value": 1214
+                },
+                {
+                  "when": "2024-11-06",
+                  "value": 1213
+                },
+                {
+                  "when": "2024-11-27",
+                  "value": 1257
+                },
+                {
+                  "when": "2024-12-04",
+                  "value": 1259
+                },
+                {
+                  "when": "2024-12-09",
+                  "value": 1151
+                },
+                {
+                  "when": "2025-02-02",
+                  "value": 1078
+                },
+                {
+                  "when": "2025-03-01",
+                  "value": 1179
+                },
+                {
+                  "when": "2025-03-12",
+                  "value": 1329
+                },
+                {
+                  "when": "2025-03-18",
+                  "value": 1352
+                },
+                {
+                  "when": "2025-05-19",
+                  "value": 1291
+                },
+                {
+                  "when": "2025-05-28",
+                  "value": 1259
+                },
+                {
+                  "when": "2025-06-02",
+                  "value": 1238
+                },
+                {
+                  "when": "2025-06-09",
+                  "value": 1319
+                },
+                {
+                  "when": "2025-06-16",
+                  "value": 1321
+                },
+                {
+                  "when": "2025-07-02",
+                  "value": 1217
+                },
+                {
+                  "when": "2025-07-27",
+                  "value": 1202
+                },
+                {
+                  "when": "2025-08-02",
+                  "value": 1215
+                },
+                {
+                  "when": "2025-09-16",
+                  "value": 1215
+                },
+                {
+                  "when": "2025-09-22",
+                  "value": 1210
+                },
+                {
+                  "when": "2025-10-09",
+                  "value": 1209
+                }
+              ],
+              "success": true,
+              "cust_id": 305408
+            },
+            "safety_rating": 2.3,
+            "license_level": 14,
+            "starts": 60,
+            "wins": 0,
+            "top5": 8,
+            "poles": 0,
+            "avg_start_position": 10,
+            "avg_finish_position": 10,
+            "laps": 666,
+            "laps_led": 1,
+            "avg_incidents": 5.6,
+            "avg_points": 38,
+            "win_percentage": 0,
+            "top5_percentage": 13.33,
+            "laps_led_percentage": 0.15
           },
-          "memberSince": "2023-07-04",
-          "lastLogin": "2025-11-20T18:48:38Z",
-          "lastUpdate": "2025-11-21T06:02:39.637Z"
+          "memberSince": "2017-12-18",
+          "lastLogin": "2025-11-18T20:57:00.672357881Z",
+          "lastUpdate": "2025-11-27T06:07:32.853Z"
         }
       ],
       "memberCount": 6
