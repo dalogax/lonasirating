@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-12-17T06:07:53Z",
+  "lastUpdate": "2025-12-18T06:07:55Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -261,13 +261,13 @@
               "value": 1870
             },
             {
-              "when": "2025-11-30",
+              "when": "2025-12-16",
               "value": 1945
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-11-30",
+              "when": "2025-12-16",
               "value": 1945
             },
             "iRating_chart": {
@@ -496,15 +496,15 @@
                   "value": 1870
                 },
                 {
-                  "when": "2025-11-30",
+                  "when": "2025-12-16",
                   "value": 1945
                 }
               ],
               "success": true,
               "cust_id": 900904
             },
-            "safety_rating": 3.47,
-            "license_level": 15,
+            "safety_rating": 2.47,
+            "license_level": 18,
             "starts": 190,
             "wins": 5,
             "top5": 53,
@@ -521,7 +521,7 @@
           },
           "memberSince": "2023-05-05",
           "lastLogin": "2025-11-29T18:39:44Z",
-          "lastUpdate": "2025-12-09T20:14:22.797Z"
+          "lastUpdate": "2025-12-17T06:07:56.315Z"
         },
         {
           "name": "Rubén",
@@ -582,13 +582,13 @@
               "value": 2167
             },
             {
-              "when": "2025-11-16",
+              "when": "2025-12-16",
               "value": 2165
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2025-11-16",
+              "when": "2025-12-16",
               "value": 2165
             },
             "iRating_chart": {
@@ -649,15 +649,15 @@
                   "value": 2167
                 },
                 {
-                  "when": "2025-11-16",
+                  "when": "2025-12-16",
                   "value": 2165
                 }
               ],
               "success": true,
               "cust_id": 1301050
             },
-            "safety_rating": 3.45,
-            "license_level": 11,
+            "safety_rating": 2.45,
+            "license_level": 14,
             "starts": 64,
             "wins": 4,
             "top5": 19,
@@ -673,8 +673,8 @@
             "laps_led_percentage": 2.33
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-12-08T20:37:08.239937027Z",
-          "lastUpdate": "2025-12-09T20:14:27.754Z"
+          "lastLogin": "2025-12-16T21:40:45.220534037Z",
+          "lastUpdate": "2025-12-17T06:08:10.221Z"
         },
         {
           "name": "Marcos",
@@ -1107,7 +1107,7 @@
           },
           "memberSince": "2024-07-25",
           "lastLogin": "2025-11-15T09:13:15.551653044Z",
-          "lastUpdate": "2025-12-09T20:14:31.929Z"
+          "lastUpdate": "2025-12-17T06:08:13.681Z"
         },
         {
           "name": "Samu",
@@ -2652,7 +2652,7 @@
           },
           "memberSince": "2023-05-05",
           "lastLogin": "2025-11-29T18:39:44Z",
-          "lastUpdate": "2025-12-09T20:14:22.797Z"
+          "lastUpdate": "2025-12-17T06:07:56.315Z"
         },
         {
           "name": "Rubén",
@@ -2700,8 +2700,8 @@
             "laps_led_percentage": 0
           },
           "memberSince": "2025-07-27",
-          "lastLogin": "2025-12-08T20:37:08.239937027Z",
-          "lastUpdate": "2025-12-09T20:14:27.754Z"
+          "lastLogin": "2025-12-16T21:40:45.220534037Z",
+          "lastUpdate": "2025-12-17T06:08:10.221Z"
         },
         {
           "name": "Marcos",
@@ -2878,7 +2878,7 @@
           },
           "memberSince": "2024-07-25",
           "lastLogin": "2025-11-15T09:13:15.551653044Z",
-          "lastUpdate": "2025-12-09T20:14:31.929Z"
+          "lastUpdate": "2025-12-17T06:08:13.681Z"
         },
         {
           "name": "Samu",
