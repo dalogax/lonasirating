@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-03T07:45:35Z",
+  "lastUpdate": "2026-06-04T07:41:38Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -625,7 +625,7 @@
           },
           "memberSince": "2023-05-05",
           "lastLogin": "2026-05-24T06:27:50.272747197Z",
-          "lastUpdate": "2026-05-27T07:30:39.772Z"
+          "lastUpdate": "2026-06-03T07:46:00.082Z"
         },
         {
           "name": "Rubén",
@@ -1802,7 +1802,7 @@
           "name": "Dalogax",
           "id": 305408,
           "category": "sports_car",
-          "currentRating": 1070,
+          "currentRating": 1077,
           "chartData": [
             {
               "when": "2024-03-06",
@@ -1987,12 +1987,20 @@
             {
               "when": "2026-05-20",
               "value": 1070
+            },
+            {
+              "when": "2026-06-01",
+              "value": 1057
+            },
+            {
+              "when": "2026-06-03",
+              "value": 1077
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2026-05-20",
-              "value": 1070
+              "when": "2026-06-03",
+              "value": 1077
             },
             "iRating_chart": {
               "blackout": false,
@@ -2182,30 +2190,38 @@
                 {
                   "when": "2026-05-20",
                   "value": 1070
+                },
+                {
+                  "when": "2026-06-01",
+                  "value": 1057
+                },
+                {
+                  "when": "2026-06-03",
+                  "value": 1077
                 }
               ],
               "success": true,
               "cust_id": 305408
             },
-            "safety_rating": 3.54,
-            "license_level": 19,
-            "starts": 111,
+            "safety_rating": 2.45,
+            "license_level": 18,
+            "starts": 113,
             "wins": 1,
             "top5": 19,
             "poles": 0,
             "avg_start_position": 10,
             "avg_finish_position": 10,
-            "laps": 1706,
+            "laps": 1712,
             "laps_led": 18,
-            "avg_incidents": 6.3645,
+            "avg_incidents": 6.4312,
             "avg_points": 29,
-            "win_percentage": 0.9,
-            "top5_percentage": 17.12,
-            "laps_led_percentage": 1.06
+            "win_percentage": 0.88,
+            "top5_percentage": 16.81,
+            "laps_led_percentage": 1.05
           },
           "memberSince": "2017-12-18",
-          "lastLogin": "2026-05-22T19:19:18.538795911Z",
-          "lastUpdate": "2026-05-28T07:24:28.434Z"
+          "lastLogin": "2026-06-03T20:26:22Z",
+          "lastUpdate": "2026-06-04T07:41:53.346Z"
         },
         {
           "name": "Luis",
@@ -3108,7 +3124,7 @@
           },
           "memberSince": "2023-05-05",
           "lastLogin": "2026-05-24T06:27:50.272747197Z",
-          "lastUpdate": "2026-05-27T07:30:39.772Z"
+          "lastUpdate": "2026-06-03T07:46:00.082Z"
         },
         {
           "name": "Rubén",
@@ -3485,7 +3501,7 @@
           "name": "Dalogax",
           "id": 305408,
           "category": "formula_car",
-          "currentRating": 1259,
+          "currentRating": 1196,
           "chartData": [
             {
               "when": "2024-03-06",
@@ -3594,12 +3610,20 @@
             {
               "when": "2026-03-17",
               "value": 1259
+            },
+            {
+              "when": "2026-06-01",
+              "value": 1325
+            },
+            {
+              "when": "2026-06-04",
+              "value": 1196
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2026-03-17",
-              "value": 1259
+              "when": "2026-06-04",
+              "value": 1196
             },
             "iRating_chart": {
               "blackout": false,
@@ -3713,30 +3737,38 @@
                 {
                   "when": "2026-03-17",
                   "value": 1259
+                },
+                {
+                  "when": "2026-06-01",
+                  "value": 1325
+                },
+                {
+                  "when": "2026-06-04",
+                  "value": 1196
                 }
               ],
               "success": true,
               "cust_id": 305408
             },
-            "safety_rating": 2.44,
+            "safety_rating": 2.08,
             "license_level": 18,
-            "starts": 68,
+            "starts": 71,
             "wins": 0,
-            "top5": 8,
+            "top5": 9,
             "poles": 0,
-            "avg_start_position": 10,
-            "avg_finish_position": 10,
-            "laps": 788,
+            "avg_start_position": 11,
+            "avg_finish_position": 11,
+            "laps": 822,
             "laps_led": 1,
-            "avg_incidents": 5.5441,
-            "avg_points": 39,
+            "avg_incidents": 5.5493,
+            "avg_points": 38,
             "win_percentage": 0,
-            "top5_percentage": 11.76,
-            "laps_led_percentage": 0.13
+            "top5_percentage": 12.68,
+            "laps_led_percentage": 0.12
           },
           "memberSince": "2017-12-18",
-          "lastLogin": "2026-05-22T19:19:18.538795911Z",
-          "lastUpdate": "2026-05-28T07:24:28.434Z"
+          "lastLogin": "2026-06-03T20:26:22Z",
+          "lastUpdate": "2026-06-04T07:41:53.346Z"
         },
         {
           "name": "Luis",
