@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-20T07:23:26Z",
+  "lastUpdate": "2026-06-21T07:41:41Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -34,6 +34,37 @@
   "data": {
     "sports_car": {
       "teamMembers": [
+        {
+          "name": "Samu",
+          "id": 1096007,
+          "category": "sports_car",
+          "currentRating": 2148,
+          "chartData": [],
+          "stats": {
+            "iRating": {
+              "when": "2026-06-02",
+              "value": 2148
+            },
+            "safety_rating": 2.62,
+            "license_level": 14,
+            "starts": 233,
+            "wins": 6,
+            "top5": 82,
+            "poles": 12,
+            "avg_start_position": 8,
+            "avg_finish_position": 10,
+            "laps": 3283,
+            "laps_led": 91,
+            "avg_incidents": 9.0664,
+            "avg_points": 56,
+            "win_percentage": 2.58,
+            "top5_percentage": 35.19,
+            "laps_led_percentage": 2.77
+          },
+          "memberSince": "2024-07-28",
+          "lastLogin": "2026-06-01T17:10:53Z",
+          "lastUpdate": "2026-06-14T06:33:46.264Z"
+        },
         {
           "name": "Porta",
           "id": 900904,
@@ -1148,37 +1179,6 @@
           "lastUpdate": "2026-06-16T08:01:57.946Z"
         },
         {
-          "name": "Samu",
-          "id": 1096007,
-          "category": "sports_car",
-          "currentRating": 2148,
-          "chartData": [],
-          "stats": {
-            "iRating": {
-              "when": "2026-06-02",
-              "value": 2148
-            },
-            "safety_rating": 2.62,
-            "license_level": 14,
-            "starts": 233,
-            "wins": 6,
-            "top5": 82,
-            "poles": 12,
-            "avg_start_position": 8,
-            "avg_finish_position": 10,
-            "laps": 3283,
-            "laps_led": 91,
-            "avg_incidents": 9.0664,
-            "avg_points": 56,
-            "win_percentage": 2.58,
-            "top5_percentage": 35.19,
-            "laps_led_percentage": 2.77
-          },
-          "memberSince": "2024-07-28",
-          "lastLogin": "2026-06-01T17:10:53Z",
-          "lastUpdate": "2026-06-14T06:33:46.264Z"
-        },
-        {
           "name": "Dalogax",
           "id": 305408,
           "category": "sports_car",
@@ -1952,6 +1952,37 @@
     "formula_car": {
       "teamMembers": [
         {
+          "name": "Samu",
+          "id": 1096007,
+          "category": "formula_car",
+          "currentRating": 1351,
+          "chartData": [],
+          "stats": {
+            "iRating": {
+              "when": "2025-08-02",
+              "value": 1351
+            },
+            "safety_rating": 2.35,
+            "license_level": 6,
+            "starts": 24,
+            "wins": 2,
+            "top5": 10,
+            "poles": 2,
+            "avg_start_position": 7,
+            "avg_finish_position": 10,
+            "laps": 208,
+            "laps_led": 17,
+            "avg_incidents": 8.75,
+            "avg_points": 41,
+            "win_percentage": 8.33,
+            "top5_percentage": 41.67,
+            "laps_led_percentage": 8.17
+          },
+          "memberSince": "2024-07-28",
+          "lastLogin": "2026-06-01T17:10:53Z",
+          "lastUpdate": "2026-06-14T06:33:46.264Z"
+        },
+        {
           "name": "Porta",
           "id": 900904,
           "category": "formula_car",
@@ -2351,37 +2382,6 @@
           "memberSince": "2024-07-25",
           "lastLogin": "2026-05-30T15:55:59.800179888Z",
           "lastUpdate": "2026-06-16T08:01:57.946Z"
-        },
-        {
-          "name": "Samu",
-          "id": 1096007,
-          "category": "formula_car",
-          "currentRating": 1351,
-          "chartData": [],
-          "stats": {
-            "iRating": {
-              "when": "2025-08-02",
-              "value": 1351
-            },
-            "safety_rating": 2.35,
-            "license_level": 6,
-            "starts": 24,
-            "wins": 2,
-            "top5": 10,
-            "poles": 2,
-            "avg_start_position": 7,
-            "avg_finish_position": 10,
-            "laps": 208,
-            "laps_led": 17,
-            "avg_incidents": 8.75,
-            "avg_points": 41,
-            "win_percentage": 8.33,
-            "top5_percentage": 41.67,
-            "laps_led_percentage": 8.17
-          },
-          "memberSince": "2024-07-28",
-          "lastLogin": "2026-06-01T17:10:53Z",
-          "lastUpdate": "2026-06-14T06:33:46.264Z"
         },
         {
           "name": "Dalogax",
