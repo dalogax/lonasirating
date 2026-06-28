@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-27T07:08:11Z",
+  "lastUpdate": "2026-06-28T07:24:25Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -38,7 +38,7 @@
           "name": "Porta",
           "id": 900904,
           "category": "sports_car",
-          "currentRating": 2566,
+          "currentRating": 2421,
           "chartData": [
             {
               "when": "2024-03-06",
@@ -327,12 +327,16 @@
             {
               "when": "2026-06-15",
               "value": 2566
+            },
+            {
+              "when": "2026-06-22",
+              "value": 2421
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2026-06-15",
-              "value": 2566
+              "when": "2026-06-22",
+              "value": 2421
             },
             "iRating_chart": {
               "blackout": false,
@@ -626,30 +630,34 @@
                 {
                   "when": "2026-06-15",
                   "value": 2566
+                },
+                {
+                  "when": "2026-06-22",
+                  "value": 2421
                 }
               ],
               "success": true,
               "cust_id": 900904
             },
-            "safety_rating": 2.6,
+            "safety_rating": 2.18,
             "license_level": 14,
-            "starts": 241,
+            "starts": 245,
             "wins": 6,
             "top5": 64,
             "poles": 0,
             "avg_start_position": 11,
             "avg_finish_position": 10,
-            "laps": 3345,
+            "laps": 3421,
             "laps_led": 56,
-            "avg_incidents": 7.5447,
+            "avg_incidents": 7.5966,
             "avg_points": 59,
-            "win_percentage": 2.49,
-            "top5_percentage": 26.56,
-            "laps_led_percentage": 1.67
+            "win_percentage": 2.45,
+            "top5_percentage": 26.12,
+            "laps_led_percentage": 1.64
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2026-06-14T09:46:46.41328966Z",
-          "lastUpdate": "2026-06-19T07:56:02.313Z"
+          "lastLogin": "2026-06-21T18:05:18.056390293Z",
+          "lastUpdate": "2026-06-27T07:08:41.966Z"
         },
         {
           "name": "Rubén",
@@ -3171,8 +3179,8 @@
             "laps_led_percentage": 9.36
           },
           "memberSince": "2023-05-05",
-          "lastLogin": "2026-06-14T09:46:46.41328966Z",
-          "lastUpdate": "2026-06-19T07:56:02.313Z"
+          "lastLogin": "2026-06-21T18:05:18.056390293Z",
+          "lastUpdate": "2026-06-27T07:08:41.966Z"
         },
         {
           "name": "Rubén",
