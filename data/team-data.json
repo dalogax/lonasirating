@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-26T08:22:59Z",
+  "lastUpdate": "2026-07-27T09:48:08Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -1175,7 +1175,7 @@
           "name": "Samu",
           "id": 1096007,
           "category": "sports_car",
-          "currentRating": 2256,
+          "currentRating": 2491,
           "chartData": [
             {
               "when": "2024-07-29",
@@ -1436,12 +1436,20 @@
             {
               "when": "2026-07-13",
               "value": 2256
+            },
+            {
+              "when": "2026-07-25",
+              "value": 2320
+            },
+            {
+              "when": "2026-07-27",
+              "value": 2491
             }
           ],
           "stats": {
             "iRating": {
-              "when": "2026-07-13",
-              "value": 2256
+              "when": "2026-07-27",
+              "value": 2491
             },
             "iRating_chart": {
               "blackout": false,
@@ -1707,30 +1715,38 @@
                 {
                   "when": "2026-07-13",
                   "value": 2256
+                },
+                {
+                  "when": "2026-07-25",
+                  "value": 2320
+                },
+                {
+                  "when": "2026-07-27",
+                  "value": 2491
                 }
               ],
               "success": true,
               "cust_id": 1096007
             },
-            "safety_rating": 3.66,
+            "safety_rating": 3.36,
             "license_level": 15,
-            "starts": 238,
-            "wins": 6,
-            "top5": 84,
-            "poles": 12,
+            "starts": 251,
+            "wins": 8,
+            "top5": 89,
+            "poles": 15,
             "avg_start_position": 8,
             "avg_finish_position": 10,
-            "laps": 3553,
-            "laps_led": 91,
-            "avg_incidents": 9.0439,
-            "avg_points": 56,
-            "win_percentage": 2.52,
-            "top5_percentage": 35.29,
-            "laps_led_percentage": 2.56
+            "laps": 3702,
+            "laps_led": 119,
+            "avg_incidents": 8.7676,
+            "avg_points": 58,
+            "win_percentage": 3.19,
+            "top5_percentage": 35.46,
+            "laps_led_percentage": 3.21
           },
           "memberSince": "2024-07-28",
-          "lastLogin": "2026-07-18T17:17:09.840633699Z",
-          "lastUpdate": "2026-07-21T08:25:28.484Z"
+          "lastLogin": "2026-07-26T15:18:22Z",
+          "lastUpdate": "2026-07-27T07:13:32.401Z"
         },
         {
           "name": "Dalogax",
@@ -3434,8 +3450,8 @@
             "laps_led_percentage": 8.17
           },
           "memberSince": "2024-07-28",
-          "lastLogin": "2026-07-18T17:17:09.840633699Z",
-          "lastUpdate": "2026-07-21T08:25:28.484Z"
+          "lastLogin": "2026-07-26T15:18:22Z",
+          "lastUpdate": "2026-07-27T07:13:32.401Z"
         },
         {
           "name": "Dalogax",
