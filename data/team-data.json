@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-10T10:38:01Z",
+  "lastUpdate": "2026-09-11T10:37:30Z",
   "categories": [
     "sports_car",
     "formula_car"
@@ -34,6 +34,37 @@
   "data": {
     "sports_car": {
       "teamMembers": [
+        {
+          "name": "Luis",
+          "id": 918399,
+          "category": "sports_car",
+          "currentRating": 3917,
+          "chartData": [],
+          "stats": {
+            "iRating": {
+              "when": "2026-08-31",
+              "value": 3917
+            },
+            "safety_rating": 2.39,
+            "license_level": 18,
+            "starts": 485,
+            "wins": 31,
+            "top5": 169,
+            "poles": 22,
+            "avg_start_position": 9,
+            "avg_finish_position": 10,
+            "laps": 7941,
+            "laps_led": 297,
+            "avg_incidents": 7.1551,
+            "avg_points": 80,
+            "win_percentage": 6.39,
+            "top5_percentage": 34.85,
+            "laps_led_percentage": 3.74
+          },
+          "memberSince": "2023-07-04",
+          "lastLogin": "2026-09-02T04:36:47.329946052Z",
+          "lastUpdate": "2026-09-03T17:46:38.120Z"
+        },
         {
           "name": "Porta",
           "id": 900904,
@@ -2292,43 +2323,43 @@
           "memberSince": "2017-12-18",
           "lastLogin": "2026-08-30T20:12:57Z",
           "lastUpdate": "2026-09-07T11:36:33.953Z"
-        },
-        {
-          "name": "Luis",
-          "id": 918399,
-          "category": "sports_car",
-          "currentRating": 3917,
-          "chartData": [],
-          "stats": {
-            "iRating": {
-              "when": "2026-08-31",
-              "value": 3917
-            },
-            "safety_rating": 2.39,
-            "license_level": 18,
-            "starts": 485,
-            "wins": 31,
-            "top5": 169,
-            "poles": 22,
-            "avg_start_position": 9,
-            "avg_finish_position": 10,
-            "laps": 7941,
-            "laps_led": 297,
-            "avg_incidents": 7.1551,
-            "avg_points": 80,
-            "win_percentage": 6.39,
-            "top5_percentage": 34.85,
-            "laps_led_percentage": 3.74
-          },
-          "memberSince": "2023-07-04",
-          "lastLogin": "2026-09-02T04:36:47.329946052Z",
-          "lastUpdate": "2026-09-03T17:46:38.120Z"
         }
       ],
       "memberCount": 6
     },
     "formula_car": {
       "teamMembers": [
+        {
+          "name": "Luis",
+          "id": 918399,
+          "category": "formula_car",
+          "currentRating": 2518,
+          "chartData": [],
+          "stats": {
+            "iRating": {
+              "when": "2026-05-14",
+              "value": 2518
+            },
+            "safety_rating": 3.46,
+            "license_level": 15,
+            "starts": 81,
+            "wins": 6,
+            "top5": 35,
+            "poles": 4,
+            "avg_start_position": 10,
+            "avg_finish_position": 11,
+            "laps": 528,
+            "laps_led": 53,
+            "avg_incidents": 5.0741,
+            "avg_points": 67,
+            "win_percentage": 7.41,
+            "top5_percentage": 43.21,
+            "laps_led_percentage": 10.04
+          },
+          "memberSince": "2023-07-04",
+          "lastLogin": "2026-09-02T04:36:47.329946052Z",
+          "lastUpdate": "2026-09-03T17:46:38.120Z"
+        },
         {
           "name": "Porta",
           "id": 900904,
@@ -3139,37 +3170,6 @@
           "memberSince": "2017-12-18",
           "lastLogin": "2026-08-30T20:12:57Z",
           "lastUpdate": "2026-09-07T11:36:33.953Z"
-        },
-        {
-          "name": "Luis",
-          "id": 918399,
-          "category": "formula_car",
-          "currentRating": 2518,
-          "chartData": [],
-          "stats": {
-            "iRating": {
-              "when": "2026-05-14",
-              "value": 2518
-            },
-            "safety_rating": 3.46,
-            "license_level": 15,
-            "starts": 81,
-            "wins": 6,
-            "top5": 35,
-            "poles": 4,
-            "avg_start_position": 10,
-            "avg_finish_position": 11,
-            "laps": 528,
-            "laps_led": 53,
-            "avg_incidents": 5.0741,
-            "avg_points": 67,
-            "win_percentage": 7.41,
-            "top5_percentage": 43.21,
-            "laps_led_percentage": 10.04
-          },
-          "memberSince": "2023-07-04",
-          "lastLogin": "2026-09-02T04:36:47.329946052Z",
-          "lastUpdate": "2026-09-03T17:46:38.120Z"
         }
       ],
       "memberCount": 6
